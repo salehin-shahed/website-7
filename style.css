@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Bar */
+
+.menu {
+    background: #000000;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #d2c0c0;
+    padding: 40px 30px;
+    font-weight: 700;
+}
+
+.menu ul li:hover>a {
+    color: #fff;
+}
+
+
+/* Drop Down Menu */
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background: #222222;
+}
+
+.menu ul li ul li {
+    display: block;
+    margin-left: -32px;
+}
+
+.menu ul li ul li a {
+    display: block;
+    color: #fff;
+    border-top: 1px solid #3e3d3d;
+    padding: 20px 0;
+}
+
+.menu ul li ul li:hover {
+    background: #3c73da;
+    transition: .4s;
+}
+
+.menu ul li ul li:first-child a {
+    border-top: 5px solid #3c73da;
+}
+
+
+/* Drop Down Hover */
+
+.menu ul li ul {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.menu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    transition: .4s;
+}
+
+.menu ul li ul li a:hover{
+    padding-right: 4px;
+}
+
+/* Sub Drop Down Menu */
+
+.menu ul li ul li {
+    position: relative;
+}
+
+.menu ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    background: #222222;
+}
+
+
+/* Sub Drop Down Menu Hover*/
+
+/* .menu ul li ul li:nth-child(2) ul {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu ul li ul li:nth-child(2):hover ul {
+    opacity: 1;
+    visibility: visible;
+} */
+
+
+/* Banner Section */
+
+.banner {
+    background-image: url(./images/young-mens.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 330px 0;
+    margin: -16px 0 30px 0;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    background: #fff;
+    width: 315px;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.text p {
+    background: #fff;
+    width: 1200px;
+    margin: 20px auto 40px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.text a {
+    background: #ff0000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border: 3px solid #ff0000;
+}
+
+.text a:hover {
+    background: #fff;
+    color: #000000;
+    transition: .4s;
+}
+
+
+/* Outside  Section */
+
+.outside {
+    border: 1px solid #ddd;
+}
+
+.title h2 {
+    text-align: center;
+    padding: 50px 0 5px 0;
+    font-size: 32px;
+}
+
+.list-item ul {
+    text-align: center;
+    padding: 0 0 60px 0;
+}
+
+.list-item ul li {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+/* Inside Section */
+
+.inside {
+    box-shadow: 0 0 3px 0 #ddd;
+    margin: 30px 0 50px 0;
+}
+
+.inside .list-item ul li {
+    list-style-position: inside;
+}
+
+
+/* Email Section */
+
+.email-section {
+    background: #f2f2f2;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.email-text {
+    display: inline-block;
+}
+
+.email-text .e-mail {
+    padding: 10px 650px 10px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff1818;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.email-button {
+    display: inline-block;
+}
+
+.email-button a {
+    background: #ff0000;
+    color: #fff;
+    padding: 13px 40px;
+    text-decoration: none;
+    margin-left: -5px;
+    font-weight: 700;
+    border: 2px solid #ff0000;
+}
+
+.email-button a:hover {
+    background: #fff;
+    color: #000;
+    transition: .4s;
+}
+
+
+/* List Style Type Section */
+
+.list-style {
+    border: 1px dotted #ddd;
+    border-width: 4px;
+    margin-top: 40px;
+}
+
+.list {
+    text-align: center;
+    padding: 7px 0 50px 0;
+}
+
+.list-1 {
+    display: inline-block;
+}
+
+.list-2 {
+    display: inline-block;
+}
+
+.list-3 {
+    display: inline-block;
+}
+
+.list-1 ol {
+    list-style-type: lower-roman;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.list-2 ul {
+    list-style-type: square;
+}
+
+.list-3 ol {
+    list-style-type: lower-greek;
+    margin-left: 50px;
+}
+
+.typography {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.9em;
+}
+
+
+/* Footer Section */
+
+.footer {
+    background: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.copyright {
+    color: #ddd;
+}
+
+.icons .icon {
+    background: #5ea6fb;
+    color: #000000;
+    margin-right: 8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+}
+
+.icons .icon:hover {
+    background: #fff;
+    transition: .4s;
+}
